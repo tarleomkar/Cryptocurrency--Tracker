@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head id="head1" runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bitcoin, ethereum, dogecoin">
+    <meta name="author" content="Omkar, Prasad">
+    <title>Cryptocurrency Website Design</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="currency.html" target="_self">Currency Convertor</a></li>
+                <li><a href="payment.html" target="_self">Payment</a></li>
+                <li><a href="aboutus.html" target="_self">About Us</a></li>
+                <li><a href="contatctus.html" target="_self">Contact Us</a></li>
+            </ul>
+            <!-- <a href="#" class="btn" target="_self">EN</a> -->
+            <a href="login.html">
+            <button class="btn" target="_self">Login</button>
+            </a>
+        </nav>
+        <div class="content">
+            <h1>BUY & <br>SELL <span>Crypto</span></h1>
+            <p>World's biggest Cryptocurrency exchannge available on web <br> as well as mobile phone.</p>
+            <a href="explore.html" class="btn">EXPLORE MORE</a>
+        </div>
+
+        <div class="coin-list">
+            <div class="coin">
+                <img src="images/bitcoin.png">
+                <div>
+                    <h3>$<span id="bitcoin"></span></h3>
+                    <p>Bitcoin</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/ethereum.png">
+                <div>
+                    <h3>$<span id="ethereum"></span></h3>
+                    <p>Ethereum</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/dogecoin.png">
+                <div>
+                    <h3>$<span id="dogecoin"></span></h3>
+                    <p>Dogecoin</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script"></script>
+    <script>
+    function validate()
+    {
+    var username=document.getElementById("username").value;
+    var password=document.getElemenById("password").value;
+    if(username=="admin" && password==user)
+    {
+        alert("Login Succesfull");
+        return false;
+    }
+    else
+    {
+        alert("Login Failed");
+    }
+    }
+</script>
+</body>
+</html>

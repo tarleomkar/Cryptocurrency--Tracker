@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <script type="text/javascript">
+        function validate()
+        {
+            var text = document.getElementById("Your_Name");
+            var email = document.getElementById("Your_Email");
+            var number = document.getElementById("Your_Phone");
+            if(text.value=="" || email.value=="" || number.value=="")
+            {
+                alert("No blank value allowed");
+                return false;
+            }
+            else{
+                true;
+            }
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div clss="right">
+                <h2>Contact Us</h2>
+
+                <form onsubmit="return validate()" action="index.html">
+                <input type="text" class="field" placeholder="Your Name">
+                <input type="email" class="field" placeholder="Your Email">
+                <input type="number" class="field" placeholder="Your Phone">
+                <textarea class="field area" placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
